@@ -1,16 +1,9 @@
-class Cat
-  attr_reader(:name, :breed)
-  attr_writer(:address)
-  attr_accessor(:age)
+require ('pry')
 
-  def initialize(name, age, breed, address)
-    @name = name
-    @age = age
-    @breed = breed
-    @birthplace = birthplace
+  def prime_shift (input)
+    array = (2..(input)).to_a()
+    array.delete_if do |array_element|
+      array_element % 2 == 0
   end
-
-  def meow
-    puts "meow"
-  end
+  array
 end
