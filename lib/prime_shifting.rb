@@ -22,11 +22,22 @@ def prime_shift (input)
       input % 5 == 0
     end
   end
-end
 
   array.delete_if do |input|
     if input > 7
       input % 7 == 0
+    end
+  end
+
+  array.delete_if do |input|
+    if input > 11
+      input % 11 == 0
+    end
+  end
+
+  array.delete_if do |input|
+    if input > 13
+      input % 13 == 0
     end
   end
 end
